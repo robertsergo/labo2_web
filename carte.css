@@ -1,0 +1,41 @@
+
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: top;
+    
+}
+
+.carte{
+    font-size: 10rem;
+    
+}
+
+.carreau{
+    color: red;
+}
+.coeur{
+    
+    color: red;
+}
+#afficher{
+    font-size: 10rem;
+    
+
+}
+#les_cartes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;     
+     
+    border: 3px solid green;
+    
+    
+
+}
+
