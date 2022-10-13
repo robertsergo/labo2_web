@@ -3,6 +3,8 @@ let list_pique = []
 let list_carreau = []
 let list_trefle = []
 let list_coeur = []
+let paquet1 = []
+let paquet2 = []
 let pique = document.querySelector(".pique").innerHTML
 let carreau = document.querySelector(".carreau").textContent
 let trefle = document.querySelector(".trefle").textContent
@@ -114,27 +116,29 @@ function  brasser_carte(){
 
 
 function  couper_carte(){
-    liste_moitie1 = []
-    liste_moitie2 = []
+    //let paquet1 = []
+    //let paquet2 = []
 
     for(let i = 2; i < 14; i++){
-        if(i % 2 === 0){
-            liste_moitie1[i] = list_carreau[i]
+        if(i % 2 == 0){
+            paquet1[i] = list_carreau[i]
+            paquet2[i] = list_trefle[i]
             
         } else{
-            liste_moitie2[i] = list_trefle[i]
+            paquet2[i] = list_pique[i]
+            paquet1[i] = list_coeur[i]
         }       
     }
 
     document.write("<table style='text-align:center'>")    
-    for(let i = 2; i < liste_moitie1/2; i++){  
+    for(let i = 2; i < 14; i++){  
         document.write(" <tr>")         
        document.write(" <td style='font-size: 2rem; background-color: powderblue;'>")
-        document.write(i+""+liste_moitie1[i]+"    "); 
+        document.write(i+""+paquet1[i]+"    "); 
         document.write(" </td>")        
 
         document.write(" <td style='color:red; font-size: 2rem; background-color: powderblue;'>")
-        document.write(i+""+liste_moitie2[i]+"    "); 
+        document.write(i+""+paquet2[i]+"    "); 
         document.write(" </td>") 
 
         
