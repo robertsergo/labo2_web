@@ -58,77 +58,22 @@ function affichercarte(){
     */
 
        
-    //document.write("<table style='text-align:center'>")
-    //document.write(" <tr>")
-
-    for(let i = 1; i < 14; i++){ 
-         
-       // document.write("<td>") 
+    
+    for(let i = 1; i < 14; i++){        
 
         document.querySelector("#afficher_pique").innerHTML += list_pique[i];
         document.querySelector("#afficher_carreau").innerHTML += list_carreau[i];
         document.querySelector("#afficher_trefle").innerHTML += list_trefle[i]; 
-        document.querySelector("#afficher_coeur").innerHTML += list_coeur[i];          
-        
-       //document.write(" </td>")       
+        document.querySelector("#afficher_coeur").innerHTML += list_coeur[i];     
        
-    }
-
-    for(let i = 1; i < 14; i++){ 
-       
-        // document.querySelector("#afficher_carreau").innerHTML += list_carreau[i];             
-        
-     }
-     for(let i = 1; i < 14; i++){ 
-       
-        //document.querySelector("#afficher_trefle").innerHTML += list_trefle[i];             
-       
-    }
-    for(let i = 1; i < 14; i++){ 
-       
-       // document.querySelector("#afficher_coeur").innerHTML += list_coeur[i];             
-       
-    }
-    //document.write(" </tr>")
-
-    //document.write(" </table>")
-
-
-
-
-
-
-
-        /* 
-       document.write(" <td style='font-size: 10rem; background-color: powderblue;'>")
-        document.write(i+""+list_pique[i]+"    "); 
-        document.write(" </td>")
-         */
-   
-   
-        
-/*
-        document.write(" <td style='color:red; font-size: 10rem; background-color: powderblue;'>")
-        document.write(i+""+list_carreau[i]+"    "); 
-        document.write(" </td>") 
-        document.write(" <td style='font-size: 10rem; background-color: powderblue;'>")
-        document.write(i+""+list_trefle[i]+"    ");
-        document.write(" </td>")
-        document.write(" <td style='font-size: 10rem; color:red; background-color: powderblue; '>")
-        document.write(i+""+list_coeur[i]+"    "); 
-        document.write(" </td>")
-        //document.write("<br/>"); 
-        document.write(" </tr>")          
-        
-    }
-    */
-   
+    }   
 }
 
 
 
 
 
-function myFunction() {
-    document.getElementById("afficher").innerHTML = "Hello World";
+function brasser() {
+    document.getElementById("afficher_brasser").innerHTML = "Hello World";
+    
 }
