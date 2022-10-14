@@ -6,7 +6,7 @@ body{
     justify-content: center;
     align-items: center;
     height: 100vh;
-    margin: top;
+   
     
 }
 
@@ -23,19 +23,28 @@ body{
     color: red;
 }
 #afficher{
-    font-size: 10rem;
-    
-
+    font-size: 3rem;
 }
+
+#afficher_pique{
+    font-size: 4rem;
+}
+#afficher_trefle{
+    font-size: 4rem;
+}
+#afficher_carreau{
+    font-size: 4rem;
+}
+#afficher_coeur{
+    font-size: 4rem;
+}
+
 #les_cartes{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100px;     
-     
-    border: 3px solid green;
-    
-    
+    height: 100px;      
+    border: 3px solid green;    
 
 }
 

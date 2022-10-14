@@ -4,48 +4,65 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>index</title>
+    <title>brassage de carte</title>
     <link rel="stylesheet" href="carte.css">
 </head>
-
-
 <body>
     <h1>bienvenue</h1>
     <div id="les_cartes"> 
         <div class="carte pique">♠️</div>    
-        <div class="carte carreau">♦️</div>    
+        <div class="carte carreau" >♦️</div>    
         <div class="carte trefle">♣️</div>
         <div class="carte coeur">♥️</div>
     </div>
     
     <h2>affichage des cartes</h2>
-   
-            <div id="afficher"> 
-                
+
+    
+
+
+    <table>
+        <tr>
+            <td>
+                <div id="afficher_pique" style="color:black">           
                
-            </div>   
+                </div>
+            </td>
+        </tr>
+    
+        <tr>
+            <td> 
+                <div id="afficher_carreau" style="color:red">        
+                
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td> 
+                <div id="afficher_trefle" style="color:black">    
+               
+                </div>
+        </td>
+        </tr>
+        <tr>
+            <td> 
+                <div id="afficher_coeur" style="color:red">        
+               
+                </div>
+            </td>
+        </tr>
+
+    </table>
+   
+   
+    
+    
     <p>
 
     </p>
     
     <script type= "text/javascript" src="carte.js"></script>
-    <p>
-        <button onclick="aff()">generez les cartes</button>
 
-    </p><br><br>
-
-    
-    <p>
-        <button onclick="brasser_carte()">brassez les cartes</button>
-
-    </p><br><br>
-
-    <p>
-        <button onclick="couper_carte()">couper les cartes</button>
-
-    </p>
-   
-
-   
+    <button onclick="affichercarte()">afficher carte</button>
 </body>
 </html>
