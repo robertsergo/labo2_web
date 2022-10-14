@@ -49,3 +49,11 @@ body{
 
 }
 
+table{
+    border: 1px;
+}
+
+td{
+    border: 1px;
+}
+
