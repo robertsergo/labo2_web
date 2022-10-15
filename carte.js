@@ -90,23 +90,24 @@ function brasser() {
         paquet = paquet1.concat(paquet2) 
          
     let demie = paquet.length/2
-    for(let i = 1; i < paquet.length/2; i++){
-        if(i % 2 ===0){
+    for(let i = 0; i < paquet.length/2; i++){
+        if(i % 2 ===0 && paquet[i] != undefined){
             liste1.push(paquet[i])
 
-        }else{
+        }else if(i % 2 ===1 && paquet[i] != undefined){
             liste3.push(paquet[i])
         }         
     }
-    for(let j = paquet.length/2; j< paquet.length; j++){
-        if(j % 2 ===0){
+    for(let j = paquet.length/2; j<= paquet.length; j++){
+        if(j % 2 ===0 && paquet[j] != undefined){
             liste2.push(paquet[j])
-        }else{
+        }else if(j % 2 ===1 && paquet[j] != undefined){
             liste4.push(paquet[j])
         }        
     }
 
     document.querySelector("#afficher_pique").innerHTML = "";
+    
     document.querySelector("#afficher_carreau").innerHTML = "";
     document.querySelector("#afficher_trefle").innerHTML = ""; 
     document.querySelector("#afficher_coeur").innerHTML = "";        
