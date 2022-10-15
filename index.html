@@ -1,71 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>brassage de carte</title>
-    <link rel="stylesheet" href="carte.css">
-</head>
-<body>
-    <h1>bienvenue</h1>
-    <div id="les_cartes"> 
-        <div class="carte pique">♠️</div>    
-        <div class="carte carreau" >♦️</div>    
-        <div class="carte trefle">♣️</div>
-        <div class="carte coeur">♥️</div>
-    </div>
-    
-    <h2>affichage des cartes</h2>    
-
-<div class="affichage">
-    <table  id="ma_table" style="width: 100px; height :100px ;">
-        <tr  id="ma_ligne">
-            <td>
-                <div id="afficher_pique" style="color:black">           
-               
-                </div>
-            </td>
-        </tr>
-    
-        <tr>
-            <td> 
-                <div id="afficher_carreau" style="color:red">        
-                
-                </div>
-            </td>
-        </tr>
-        <tr>
-            <td> 
-                <div id="afficher_trefle" style="color:black">    
-               
-                </div>
-        </td>
-        </tr>
-        <tr>
-            <td> 
-                <div id="afficher_coeur" style="color:red">        
-               
-                </div>
-            </td>
-        </tr>
-    </table>
-</div> 
-   
-    <p>
-
-    </p>
-    
-    <script type= "text/javascript" src="carte.js"></script>
-
-    <p>
-        <div class="menu">
-            <button onclick="affichercarte()">afficher carte</button>
-            <button onclick="brasser()">brasser carte</button>
-
-        </div>
-    </p>
-
-   
-</body>
+	<head>
+        <link rel="shortcut icon"  type="image/x-icon"  href="./images/13.png"/>
+		<title>index</title>		
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="carte.css"/>
+		<script type="text/javascript" src="carte.js"></script>
+	</head>
+	<body>			
+				
+	  <h1 id = 'id_titre'>BIENVENUE AU BRASSAGE DE JEU DE CARTES </h2>						
+			
+	  <div class="affiche">				
+         <div id="id3"></div>  
+         <br>  <br>
+  			
+	    <input type = "button" value = "Brasser" id = "id2" onclick = "brassage()"/>
+        <input type = "button" value = "initialiser" id = "id2" onclick = "generation()"/>					
+						
+		</div>	
+	</body>	
 </html>

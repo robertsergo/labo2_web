@@ -1,59 +1,50 @@
 
-
 body{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-   
-    
-}
-
-.carte{
-    font-size: 10rem;
-    
-}
-
-.carreau{
-    color: red;
-}
-.coeur{
-    
-    color: red;
-}
-#afficher{
-    font-size: 3rem;
-}
-
-
-#afficher_pique{
-    font-size: 4rem;
-}
-#afficher_trefle{
-    font-size: 4rem;
-}
-#afficher_carreau{
-    font-size: 4rem;
-}
-#afficher_coeur{
-    font-size: 4rem;
-}
-
-#les_cartes{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100px;      
-    border: 3px solid green;    
+    height: 70vh;
+    background-color: beige;
 
 }
 
-table{
-    border: 1px;
+
+#id_titre{
+	text-align: center; 
+	color : blue;
 }
 
-td{
-    border: 1px;
+
+
+#id2{
+	width:150px;
+	background-color:greenyellow;
+	color:grey;
+	height: 50px;
+    text-align: center;	
 }
+
+
+
+.affiche{
+	margin:0px auto 0px auto;
+	height:345px;
+	width:800px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
